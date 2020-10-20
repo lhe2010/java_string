@@ -1,4 +1,7 @@
+// 2020-10-20 화 1교시 15:15-15:20
 package step4_01.string;
+
+import java.util.Scanner;
 
 /*
  * # 타자연습 게임[1단계]
@@ -16,7 +19,26 @@ public class StringEx09_문제 {
 
 	public static void main(String[] args) {
 		
+		Scanner scan = new Scanner(System.in);
+		
 		String[] words = {"java", "mysql", "jsp", "spring"};
+		String getAnswer = "";
+		
+		for (int i = 0; i < words.length; i++) {
+			
+			while(true) {
+				System.out.println("문제 : " + words[i]);
+				System.out.print("입력 : ");
+				getAnswer = scan.next();
+				
+				if(words[i].equals(getAnswer)) {
+					break;
+				}
+			}
+		}
+		
+		System.out.println("[게임종료]");	
+		scan.close();
 
 	}
 
