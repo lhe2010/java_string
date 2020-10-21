@@ -1,5 +1,7 @@
+// 2020-10-21 수 3교시 17:43-
 package step4_01.string;
 
+import java.util.Arrays;
 
 //문제) moneyData 와 nameData 를 조합해서 userData를 아래와같이 만들어보세요
 
@@ -24,7 +26,7 @@ public class StringEx21_테스트정답 {
 	public static void main(String[] args) {
 		
 		String nameData = "";
-		nameData+=	"100001/이만수";nameData += "\n";		
+		nameData +=	"100001/이만수";nameData += "\n";		
 		nameData += "100002/이영희";nameData += "\n";
 		nameData += "100003/유재석";nameData += "\n";
 		nameData += "100004/박명수";nameData += "\n";
@@ -46,8 +48,18 @@ public class StringEx21_테스트정답 {
 
 		String userData = "";
 		
+//		System.out.println(nameData);
+//		System.out.println(moneyData);
 		
+		String[] nameSp = nameData.split("/");
+		System.out.println(Arrays.toString(nameSp));
+		System.out.println(nameSp.length);
 		
+		String[] moneySp = moneyData.split("/");
+		
+		for (int i = 0; i < moneySp.length; i++) {
+			
+		}
 
 		
 
