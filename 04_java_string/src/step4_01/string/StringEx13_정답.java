@@ -8,7 +8,6 @@ import java.util.Arrays;
 public class StringEx13_정답 {
 
 	public static void main(String[] args) {
-		
 		String[] names = {"홍길동", "김유신", "마동석", "자바킹", "서동요"};
 		String sTemp = "";
 		

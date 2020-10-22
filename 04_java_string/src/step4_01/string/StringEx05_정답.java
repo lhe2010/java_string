@@ -24,9 +24,9 @@ public class StringEx05_정답 {
 
 		// 문제 2) 성별 출력
 		// 정답 2) 여성
-		if(jumin.charAt(7) == '2') {
+		if(jumin.charAt(7) == '2' || jumin.charAt(7) == '4') {
 			System.out.println("여성");
-		} else if(jumin.charAt(7) == '1'){
+		} else if(jumin.charAt(7) == '1' || jumin.charAt(7) == '3'){
 			System.out.println("남성");
 		}
 

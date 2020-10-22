@@ -1,10 +1,9 @@
-// 2020-10-21 수 3교시 17:43-
+// 2020-10-21 수 3교시 17:43-17:50
+// 2020-10-22 목 1교시 15:06-15:21
 package step4_01.string;
 
-import java.util.Arrays;
 
 //문제) moneyData 와 nameData 를 조합해서 userData를 아래와같이 만들어보세요
-
 /*
 * 100001/이만수/600
 * 100003/유재석/7000
@@ -18,8 +17,6 @@ import java.util.Arrays;
 * 100002/이영희/900
 * 100004/박명수/800
 */
-
-
 
 public class StringEx21_테스트정답 {
 
@@ -48,21 +45,24 @@ public class StringEx21_테스트정답 {
 
 		String userData = "";
 		
-//		System.out.println(nameData);
-//		System.out.println(moneyData);
+		String[] nameSp = nameData.split("\n");
+		String[] moneySp = moneyData.split("\n");
 		
-		String[] nameSp = nameData.split("/");
-		System.out.println(Arrays.toString(nameSp));
-		System.out.println(nameSp.length);
-		
-		String[] moneySp = moneyData.split("/");
+//		System.out.println(Arrays.toString(nameSp));
+//		System.out.println(Arrays.toString(moneySp));
 		
 		for (int i = 0; i < moneySp.length; i++) {
-			
+//			System.out.printf("for - i = %d\n", i);
+//			System.out.println(moneySp[i].split("/")[0]);
+			for (int j = 0; j < nameSp.length; j++) {
+//				System.out.printf("for - i = %d, j = %d\n", i, j);
+				if(moneySp[i].split("/")[0].equals(nameSp[j].split("/")[0])){
+//					System.out.println("찾음" + nameSp[j].split("/")[0]);
+					userData += (moneySp[i].split("/")[0] + "/" + nameSp[j].split("/")[1] + "/" 
+							+ moneySp[i].split("/")[1] + "\n");
+				}
+			}
 		}
-
-		
-
+		System.out.println(userData);
 	}
-
 }

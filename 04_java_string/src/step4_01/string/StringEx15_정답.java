@@ -42,7 +42,7 @@ public class StringEx15_정답 {
 			System.out.println("문자만 있다.");
 		} else if(numCnt > 0 && (lowCnt + uppCnt) > 0) {
 			System.out.println("문자와 숫자가 섞여있다. ");
-		} else if(numCnt > 0 && (lowCnt + uppCnt) == 0 ) {
+		} else if(numCnt == text.length() ) { // ### cf. length()랑 numCnt변수랑 같으면 숫자만 있는 것이다. 
 			System.out.println("숫자만 있다.");
 		}
 

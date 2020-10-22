@@ -35,7 +35,7 @@ public class StringEx12_정답 {
 		int[][] jang = new int[MAX_SIZE][2];
 		int count = 0;
 		int identifier = -1; // 1로그인 -1로그아웃
-		int userIdx = -1;
+		int userIdx = -1;	// ###cf. 로그인한 회원의 인덱스를 identifier로 설정하고 로그아웃시 -1로 바꿔주면 userIdx 변수가 필요없다! 
 		
 		String[] ids = {"qwer", "javaking", "abcd"};
 		String[] pws = {"1111",     "2222", "3333"};

@@ -43,7 +43,7 @@ public class StringEx03 {
 		System.out.println(arr[1]);
 		System.out.println(arr[2]);
 		
-		// (참고) 이어붙이기. c에는 concate() java에는 없다. -> 빈거만들고 붙이기 
+		// (참고) 이어붙이기. c에는 concat() java에는 없다. -> 빈거만들고 붙이기 
 		String result = "[4] ";
 		result += arr[0];
 		result += ",";

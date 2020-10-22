@@ -40,3 +40,5 @@ public class StringEx14_정답 {
 	}
 
 }
+// ### cf. cnt말고도 boolean 변수로 isCorrect를 둬서 
+// cnt++ 대신 하나라도 틀리면 false로 바꾸게 하는 방법도 있다. 

@@ -34,6 +34,7 @@ public class StringEx06_정답 {
 			} else {
 				text += (scores[i] + "/");
 			}
+			// *** if( i != scores.length - 1) text += "/"; 이거로 하면 더 간단하고 가독성 좋음 
 		}
 		System.out.println(text);
 	}
