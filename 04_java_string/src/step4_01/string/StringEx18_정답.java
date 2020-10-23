@@ -20,7 +20,6 @@ public class StringEx18_정답 {
 		Random ran = new Random();
 		
 		String word = "performance";
-//		String word = "aaabbbcccdddeeefffggghhhiiijjjkkk";
 		String meaning = "공연";
 		
 		int score = 100;

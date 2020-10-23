@@ -45,8 +45,6 @@ public class StringEx16_정답T {
 		if (isSame) 	System.out.println("일치"); 
 		else 			System.out.println("불일치");
 		
-		
 		scan.close();
 	}
-
 }

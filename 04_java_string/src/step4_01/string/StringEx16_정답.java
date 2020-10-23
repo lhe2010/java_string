@@ -46,7 +46,5 @@ public class StringEx16_정답 {
 			}
 		}
 		System.out.println("true");
-		
 	}
-
 }
